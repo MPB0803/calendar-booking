@@ -1,0 +1,1976 @@
+# CalendiFlow – Booking & Event Calendar
+# Copyright (C) 2026 Misael Francisco Palomino Beltrán
+# This file is distributed under the same license as the CalendiFlow plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: CalendiFlow 2.0.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/calendar-booking\n"
+"POT-Creation-Date: 2026-04-23\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+"X-Domain: calendar-booking\n"
+
+#: includes/class-notifications.php
+msgid "%1$d / %2$d plazas (%3$d%%)"
+msgstr ""
+
+#: includes/class-booking.php
+msgid "%d libres"
+msgstr ""
+
+#: includes/class-booking.php
+msgid "%d plaza(s) libres"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "%d plazas"
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "(sin cifrado)"
+msgstr ""
+
+#: admin/class-actividades.php
+#: admin/class-settings.php
+#: includes/class-booking.php
+msgid "Abril"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Accesos rápidos"
+msgstr ""
+
+#: admin/class-actividades.php
+#: admin/class-admin.php
+#: templates/admin/settings-calendarios.php
+msgid "Acciones"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Activa"
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "Activa la verificación en dos pasos"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "Activar en configuración"
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "Activar envío SMTP personalizado"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Activar lista de espera cuando la actividad esté completa"
+msgstr ""
+
+#: admin/class-admin.php
+#: includes/class-notifications.php
+#: includes/class-reports.php
+msgid "Actividad"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Actividad eliminada."
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Actividad guardada correctamente."
+msgstr ""
+
+#: includes/class-booking.php
+msgid "Actividad no válida."
+msgstr ""
+
+#: includes/class-booking.php
+#: templates/calendar.php
+msgid "Actividad:"
+msgstr ""
+
+#: admin/class-actividades.php
+#: includes/class-reports.php
+msgid "Actividades"
+msgstr ""
+
+#: includes/class-booking.php
+#: templates/calendar.php
+msgid "Actividades disponibles"
+msgstr ""
+
+#: templates/admin/settings-campos.php
+msgid "Actualizar campo"
+msgstr ""
+
+#: includes/class-privacy.php
+msgid "Ages"
+msgstr ""
+
+#: admin/class-actividades.php
+#: admin/class-settings.php
+#: includes/class-booking.php
+msgid "Agosto"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Alertas de capacidad"
+msgstr ""
+
+#: templates/admin/settings-calendarios.php
+msgid "Apariencia"
+msgstr ""
+
+#: templates/admin/settings-campos.php
+msgid "Arrastra para reordenar"
+msgstr ""
+
+#: includes/class-reports.php
+msgid "Asistentes"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Asunto"
+msgstr ""
+
+#: templates/admin/settings-campos.php
+msgid "Atención: esto reemplazará los campos actuales de esta actividad."
+msgstr ""
+
+#: includes/class-privacy.php
+msgid "Attendees"
+msgstr ""
+
+#: templates/admin/settings-campos.php
+msgid "Añadir campo"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Añadir festivo"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Añadir período"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Badge que aparece en días con varias actividades"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Bloqueado"
+msgstr ""
+
+#: includes/class-privacy.php
+msgid "Booking details (date, time slot, attendees and optional notes)"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Botón de reserva"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Cabecera y botón"
+msgstr ""
+
+#: includes/class-privacy.php
+msgid "Calendar Booking"
+msgstr ""
+
+#: includes/class-privacy.php
+msgid "Calendar Booking Reservations"
+msgstr ""
+
+#: includes/class-privacy.php
+msgid "Calendar Booking reservations"
+msgstr ""
+
+#: includes/class-privacy.php
+msgid "Calendar Booking stores reservation data in your WordPress database to manage bookings and send notifications."
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Calendario"
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Calendario actualizado."
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Calendario creado. Shortcode:"
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Calendario eliminado correctamente."
+msgstr ""
+
+#: includes/class-booking.php
+msgid "Calendario no encontrado."
+msgstr ""
+
+#: admin/class-admin.php
+#: templates/admin/settings-campos.php
+#: templates/admin/settings-diseno.php
+msgid "Calendario:"
+msgstr ""
+
+#: templates/admin/dashboard.php
+#: templates/admin/settings-calendarios.php
+msgid "Calendarios"
+msgstr ""
+
+#: templates/admin/settings-calendarios.php
+msgid "Calendarios existentes"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "CalendiFlow – Dashboard"
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Campo eliminado."
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Campo guardado."
+msgstr ""
+
+#: templates/admin/settings-campos.php
+msgid "Campos de esta actividad"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Campos del Formulario"
+msgstr ""
+
+#: admin/class-admin.php
+#: templates/admin/settings-campos.php
+msgid "Cancelar"
+msgstr ""
+
+#: includes/class-notifications.php
+#: templates/cancelar.php
+msgid "Cancelar reserva"
+msgstr ""
+
+#: includes/class-booking.php
+msgid "Cargando actividades..."
+msgstr ""
+
+#: templates/calendar.php
+msgid "Cargando..."
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Casilla"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Celdas del calendario"
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Cita médica"
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Clase o taller"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Color de fondo"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Color de los números de días disponibles"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Color del icono"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Color del texto"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Color del texto LUN, MAR, MIÉ…"
+msgstr ""
+
+#: templates/admin/settings-calendarios.php
+#: templates/admin/settings-diseno.php
+msgid "Color principal"
+msgstr ""
+
+#: templates/admin/settings-calendarios.php
+#: templates/admin/settings-diseno.php
+msgid "Color secundario"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Color sólido"
+msgstr ""
+
+#: templates/admin/settings-calendarios.php
+msgid "Color usado para elementos destacados del calendario."
+msgstr ""
+
+#: templates/admin/settings-calendarios.php
+msgid "Color usado para elementos secundarios."
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Colores"
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Comentarios"
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Comentarios..."
+msgstr ""
+
+#: includes/class-booking.php
+#: templates/calendar.php
+msgid "Completo"
+msgstr ""
+
+#: templates/admin/settings-campos.php
+msgid "Configura los campos personalizados que aparecerán en el formulario de reserva para cada actividad."
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Configura los días festivos específicos para esta actividad. Estos días no estarán disponibles para reserva."
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Configura los períodos de vacaciones para esta actividad. Puedes elegir entre bloquear completamente el período o aplicar un horario especial."
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Configuración"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Configuración Avanzada"
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "Configuración de correo SMTP"
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "Configuración guardada correctamente."
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Configurado en: %s"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Configurar"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Configurar Calendario"
+msgstr ""
+
+#: includes/class-booking.php
+msgid "Confirmar reserva"
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "Contraseña"
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "Contraseña o contraseña de aplicación"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Copiar"
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "Correo de prueba enviado correctamente a"
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "Crea una contraseña para \"Correo\""
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Crea una página con este shortcode para que los usuarios puedan cancelar sus reservas."
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Crea una página con este shortcode para que tras una reserva se redirija a ella."
+msgstr ""
+
+#: admin/class-actividades.php
+#: templates/admin/settings-campos.php
+msgid "Crear actividad"
+msgstr ""
+
+#: templates/admin/settings-calendarios.php
+msgid "Crear calendario"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Crear, editar, festivos, vacaciones..."
+msgstr ""
+
+#: includes/class-privacy.php
+msgid "Created at"
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "Credenciales"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Cuadrado"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Cuando esté activa, los usuarios podrán apuntarse a la lista de espera si no hay plazas disponibles. Se les notificará automáticamente si se libera una plaza."
+msgstr ""
+
+#: includes/class-privacy.php
+msgid "Customer email address"
+msgstr ""
+
+#: includes/class-privacy.php
+msgid "Customer name"
+msgstr ""
+
+#: includes/class-privacy.php
+msgid "Customer phone number"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Círculo"
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "Cómo configurar Gmail"
+msgstr ""
+
+#: includes/class-privacy.php
+msgid "Date"
+msgstr ""
+
+#: includes/class-booking.php
+msgid "Datos de actividad no válidos."
+msgstr ""
+
+#: includes/class-notifications.php
+msgid "Datos de la reserva"
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "Datos del remitente"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "Desactivada"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "Descargar"
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Describe el motivo..."
+msgstr ""
+
+#: admin/class-actividades.php
+#: templates/admin/settings-calendarios.php
+msgid "Descripción"
+msgstr ""
+
+#: templates/admin/settings-calendarios.php
+msgid "Descripción (Ej: Navidad)"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Descripción breve visible al usuario..."
+msgstr ""
+
+#: templates/admin/settings-calendarios.php
+msgid "Descripción informativa del calendario. Visible solo en administración."
+msgstr ""
+
+#: admin/class-actividades.php
+#: templates/admin/settings-calendarios.php
+msgid "Desde"
+msgstr ""
+
+#: includes/class-reports.php
+msgid "Detalle de todas las reservas"
+msgstr ""
+
+#: includes/class-notifications.php
+#: templates/cancelar.php
+msgid "Detalles de tu reserva"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Diamante"
+msgstr ""
+
+#: admin/class-actividades.php
+#: admin/class-settings.php
+#: includes/class-booking.php
+msgid "Diciembre"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Diseño del calendario"
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Diseño guardado correctamente."
+msgstr ""
+
+#: templates/calendar.php
+msgid "Disponible"
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Domingo"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Día activación ciclo"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Día del mes para activar el siguiente mes. 0 = desactivado."
+msgstr ""
+
+#: includes/class-reports.php
+#: templates/admin/settings-calendarios.php
+msgid "Días"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Días Festivos"
+msgstr ""
+
+#: includes/class-reports.php
+msgid "Días con reservas"
+msgstr ""
+
+#: templates/admin/settings-calendarios.php
+msgid "Días de la semana en los que se permiten reservas."
+msgstr ""
+
+#: templates/admin/settings-calendarios.php
+msgid "Días disponibles"
+msgstr ""
+
+#: admin/class-admin.php
+#: admin/class-settings.php
+#: includes/class-reports.php
+msgid "Edades"
+msgstr ""
+
+#: templates/admin/settings-calendarios.php
+#: templates/admin/settings-campos.php
+msgid "Editar"
+msgstr ""
+
+#: templates/admin/settings-calendarios.php
+msgid "Editar calendario"
+msgstr ""
+
+#: templates/admin/settings-campos.php
+msgid "Editar campo"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Ej: 10:00-12:00"
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Ej: 2"
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Ej: 5, 7, 9 años"
+msgstr ""
+
+#: templates/admin/partials/campo-form.php
+msgid "Ej: Nombre del adulto"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Ej: Sala A, Patio, Aula 1..."
+msgstr ""
+
+#: admin/class-actividades.php
+#: templates/admin/settings-calendarios.php
+msgid "Ej: Semana Santa"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Ej: Taller de manualidades"
+msgstr ""
+
+#: templates/admin/partials/campo-form.php
+msgid "Ej: nombre_adulto"
+msgstr ""
+
+#: includes/class-booking.php
+msgid "El campo \"%s\" es obligatorio."
+msgstr ""
+
+#: includes/class-booking.php
+msgid "El email es obligatorio."
+msgstr ""
+
+#: includes/class-booking.php
+msgid "El email no tiene un formato válido."
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "El siguiente ciclo abre el día <strong>%d</strong> del mes en que corresponda."
+msgstr ""
+
+#: admin/class-actividades.php
+#: templates/admin/settings-calendarios.php
+msgid "Eliminar"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "Eliminar todas las reservas de esta actividad"
+msgstr ""
+
+#: admin/class-admin.php
+#: admin/class-settings.php
+#: includes/class-privacy.php
+msgid "Email"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Email de Cancelación (por administrador)"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Email de Cancelación (por usuario)"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Email de Confirmación"
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "Email del administrador"
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "Email del remitente"
+msgstr ""
+
+#: includes/class-booking.php
+msgid "En lista de espera"
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "Encriptación"
+msgstr ""
+
+#: admin/class-actividades.php
+#: admin/class-settings.php
+#: includes/class-booking.php
+msgid "Enero"
+msgstr ""
+
+#: includes/class-booking.php
+msgid "Enviando..."
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "Enviar correo de prueba"
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "Error al enviar el correo de prueba. Revisa la configuración SMTP."
+msgstr ""
+
+#: includes/class-booking.php
+msgid "Error al guardar en la lista de espera. Inténtalo de nuevo."
+msgstr ""
+
+#: includes/class-booking.php
+msgid "Error al guardar la reserva. Inténtalo de nuevo."
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Error al guardar. Por favor, revisa que todos los campos obligatorios estén completos."
+msgstr ""
+
+#: includes/class-booking.php
+msgid "Esta actividad no está disponible para la fecha seleccionada."
+msgstr ""
+
+#: templates/admin/settings-campos.php
+msgid "Esta actividad no tiene campos. Añade los que necesites o usa una plantilla."
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Esta fuente está incluida en el plugin y se sirve localmente, sin llamadas a servicios externos."
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Esta fuente requiere que tu tema la cargue (p.ej. via Google Fonts en el personalizador). El plugin no la incluye para cumplir con la normativa de privacidad."
+msgstr ""
+
+#: templates/cancelar.php
+msgid "Esta reserva ya fue cancelada anteriormente."
+msgstr ""
+
+#: admin/class-admin.php
+#: includes/class-reports.php
+#: templates/admin/dashboard.php
+msgid "Esta semana"
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "Estado"
+msgstr ""
+
+#: admin/class-admin.php
+#: includes/class-reports.php
+msgid "Este año"
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "Este email recibirá las notificaciones de nuevas reservas y el informe diario."
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Este mensaje se enviará si el administrador cancela la reserva manualmente."
+msgstr ""
+
+#: admin/class-admin.php
+#: includes/class-reports.php
+msgid "Este mes"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Estrella"
+msgstr ""
+
+#: templates/admin/partials/campo-form.php
+msgid "Etiqueta *"
+msgstr ""
+
+#: admin/class-actividades.php
+#: admin/class-settings.php
+#: includes/class-booking.php
+msgid "Febrero"
+msgstr ""
+
+#: admin/class-admin.php
+#: admin/class-settings.php
+#: includes/class-notifications.php
+msgid "Fecha"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Fecha fin *"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Fecha inicio *"
+msgstr ""
+
+#: includes/class-booking.php
+msgid "Fecha no válida."
+msgstr ""
+
+#: templates/cancelar.php
+msgid "Fecha:"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "Fechas"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Festivos guardados correctamente."
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Festivos y Vacaciones"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Fondo de la fila LUN, MAR… y acentos"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Fondo del calendario"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Forma del icono"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Fuente"
+msgstr ""
+
+#: includes/class-reports.php
+msgid "Generado el"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "General"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Gestionar Actividades"
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Google Fonts (excepción permitida)"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Guardando..."
+msgstr ""
+
+#: templates/admin/settings-calendarios.php
+msgid "Guardar cambios"
+msgstr ""
+
+#: includes/class-reports.php
+msgid "Guardar como PDF"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Guardar configuración"
+msgstr ""
+
+#: includes/class-booking.php
+msgid "HOY"
+msgstr ""
+
+#: templates/calendar.php
+msgid "Hacer otra reserva"
+msgstr ""
+
+#: templates/calendar.php
+msgid "Hacer reserva"
+msgstr ""
+
+#: includes/class-booking.php
+msgid "Has superado el límite de intentos para esta reserva. Por favor, espera una hora."
+msgstr ""
+
+#: includes/class-booking.php
+msgid "Has superado el límite de intentos. Por favor, espera una hora."
+msgstr ""
+
+#: admin/class-actividades.php
+#: templates/admin/settings-calendarios.php
+msgid "Hasta"
+msgstr ""
+
+#: includes/class-notifications.php
+msgid "Hola <strong>%s</strong>,<br>¡Buenas noticias! Se ha liberado una plaza en la actividad que te interesaba y <strong>te la hemos asignado automáticamente</strong>."
+msgstr ""
+
+#: includes/class-notifications.php
+msgid "Hola <strong>{nombre}</strong>,<br>lamentamos comunicarle que por motivos excepcionales <strong>hemos tenido que cancelar su reserva</strong>. Disculpe las molestias ocasionadas."
+msgstr ""
+
+#: includes/class-notifications.php
+msgid "Hola <strong>{nombre}</strong>,<br>tu reserva en <strong>{calendario}</strong> ha sido confirmada correctamente."
+msgstr ""
+
+#: includes/class-notifications.php
+msgid "Hola <strong>{nombre}</strong>,<br>tu reserva ha sido <strong>cancelada correctamente</strong>."
+msgstr ""
+
+#: admin/class-actividades.php
+#: admin/class-admin.php
+#: includes/class-notifications.php
+msgid "Horario"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Horario *"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Horario especial"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Horario especial para períodos vacacionales (ej: 10:00-14:00)."
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Horario específico de esta actividad. Formato: HH:MM-HH:MM"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Horario vacaciones"
+msgstr ""
+
+#: templates/cancelar.php
+msgid "Horario:"
+msgstr ""
+
+#: includes/class-reports.php
+msgid "Hoy"
+msgstr ""
+
+#: templates/admin/settings-calendarios.php
+msgid "ID"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "ID de actividad no válido."
+msgstr ""
+
+#: includes/class-privacy.php
+msgid "If SMTP or third-party services are configured, reservation notifications may be sent through those providers. The plugin also includes the Freemius SDK for plugin licensing and update infrastructure according to your plugin settings and consent flow."
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Imagen"
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Incluidas en el plugin (sin carga externa)"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Indicador múltiples actividades"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Información importante:"
+msgstr ""
+
+#: includes/class-reports.php
+msgid "Informe diario"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "Informe diario (hoy)"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "Informes"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "Informes por día"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "Informes por período"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "Informes semanales, mensuales y anuales"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Inicio de ciclo"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Inserta el calendario de reservas en cualquier página o entrada."
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Jueves"
+msgstr ""
+
+#: admin/class-actividades.php
+#: admin/class-settings.php
+#: includes/class-booking.php
+msgid "Julio"
+msgstr ""
+
+#: admin/class-actividades.php
+#: admin/class-settings.php
+#: includes/class-booking.php
+msgid "Junio"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "La actividad que intentas editar no existe o ha sido eliminada."
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "La fecha de fin debe ser igual o posterior a la fecha de inicio."
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "La fecha de fin no puede ser anterior a la fecha de inicio."
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "La fecha de inicio debe ser anterior a la de fin."
+msgstr ""
+
+#: includes/class-booking.php
+msgid "La fecha indicada no está disponible para esta actividad."
+msgstr ""
+
+#: includes/class-booking.php
+msgid "La fecha no está dentro del rango de esta actividad."
+msgstr ""
+
+#: admin/class-admin.php
+msgid "La lista de espera está vacía. No hay personas pendientes."
+msgstr ""
+
+#: admin/class-admin.php
+msgid "La lista de espera no está activada para esta actividad. Ve a la configuración de la actividad para activarla."
+msgstr ""
+
+#: includes/class-booking.php
+msgid "La lista de espera no está disponible para esta actividad."
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Letras días de semana"
+msgstr ""
+
+#: admin/class-actividades.php
+#: admin/class-admin.php
+#: includes/class-booking.php
+msgid "Lista de espera"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Listado completo de reservas"
+msgstr ""
+
+#: includes/class-reports.php
+msgid "Listado de reservas"
+msgstr ""
+
+#: includes/class-booking.php
+msgid "Lo sentimos, esta actividad ya está completa."
+msgstr ""
+
+#: templates/admin/settings-calendarios.php
+msgid "Logo actual"
+msgstr ""
+
+#: templates/admin/settings-campos.php
+msgid "Los campos configurados aquí aparecerán cuando el usuario seleccione esta actividad."
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Los campos marcados con * son obligatorios. Después de guardar, podrás configurar el resto de opciones en las otras pestañas."
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Ludoteca"
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Lunes"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Límite de plazas"
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Martes"
+msgstr ""
+
+#: admin/class-actividades.php
+#: admin/class-settings.php
+#: includes/class-booking.php
+msgid "Marzo"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Marzo 2026"
+msgstr ""
+
+#: admin/class-actividades.php
+#: admin/class-settings.php
+#: includes/class-booking.php
+msgid "Mayo"
+msgstr ""
+
+#: admin/class-admin.php
+#: includes/class-reports.php
+msgid "Menores"
+msgstr ""
+
+#: includes/class-reports.php
+msgid "Menores totales"
+msgstr ""
+
+#: templates/cancelar.php
+msgid "Menores:"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Mensaje"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Mensaje especial"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Mes en el que comienza el ciclo anual."
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Mes inicio ciclo"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Meses máx. reserva"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Meses por ciclo"
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Miércoles"
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Motivo de la cita"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Muestra"
+msgstr ""
+
+#: templates/calendar.php
+msgid "Múltiples actividades"
+msgstr ""
+
+#: includes/class-booking.php
+msgid "Múltiples eventos disponibles"
+msgstr ""
+
+#: includes/class-privacy.php
+msgid "Name"
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Nivel"
+msgstr ""
+
+#: templates/admin/settings-campos.php
+msgid "No hay actividades creadas todavía."
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "No hay actividades programadas. Crea la primera."
+msgstr ""
+
+#: admin/class-admin.php
+msgid "No hay reservas activas en esta sección."
+msgstr ""
+
+#: templates/cancelar.php
+msgid "No se encontró la reserva o el enlace no es válido."
+msgstr ""
+
+#: admin/class-settings.php
+msgid "No se puede eliminar el calendario porque tiene actividades asociadas. Elimina primero las actividades."
+msgstr ""
+
+#: includes/class-booking.php
+msgid "No se pueden hacer reservas en fechas pasadas."
+msgstr ""
+
+#: admin/class-actividades.php
+#: includes/class-reports.php
+#: includes/class-smtp.php
+msgid "No tienes permisos para realizar esta acción."
+msgstr ""
+
+#: admin/class-actividades.php
+#: admin/class-admin.php
+#: admin/class-settings.php
+msgid "No tienes permisos suficientes para acceder a esta página."
+msgstr ""
+
+#: admin/class-actividades.php
+#: admin/class-admin.php
+#: includes/class-reports.php
+msgid "Nombre"
+msgstr ""
+
+#: admin/class-actividades.php
+#: templates/admin/settings-calendarios.php
+msgid "Nombre *"
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Nombre completo"
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Nombre completo del adulto"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Nombre del festivo (Ej: Navidad)"
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "Nombre del remitente"
+msgstr ""
+
+#: templates/admin/partials/campo-form.php
+msgid "Nombre interno *"
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "Nombre que verá el destinatario"
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Nombre y apellidos"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Nombre, horario, días disponibles..."
+msgstr ""
+
+#: templates/cancelar.php
+msgid "Nombre:"
+msgstr ""
+
+#: admin/class-actividades.php
+#: admin/class-settings.php
+#: includes/class-booking.php
+msgid "Noviembre"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Nueva actividad"
+msgstr ""
+
+#: includes/class-notifications.php
+msgid "Nueva reserva recibida"
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Nº de menores"
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Número"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Número de meses anticipados que se pueden reservar."
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Número máximo de participantes por sesión."
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Números del mes"
+msgstr ""
+
+#: includes/class-notifications.php
+msgid "O copia este enlace en tu navegador:"
+msgstr ""
+
+#: templates/admin/partials/campo-form.php
+msgid "Obligatorio"
+msgstr ""
+
+#: admin/class-actividades.php
+#: admin/class-settings.php
+#: includes/class-booking.php
+msgid "Octubre"
+msgstr ""
+
+#: includes/class-reports.php
+msgid "Ocupación"
+msgstr ""
+
+#: includes/class-notifications.php
+#: includes/class-reports.php
+msgid "Ocupación del día"
+msgstr ""
+
+#: templates/admin/partials/campo-form.php
+msgid "Opciones"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Padding interior"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Panel de control del sistema de reservas"
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "Para Gmail usa una contraseña de aplicación, no tu contraseña normal."
+msgstr ""
+
+#: templates/cancelar.php
+msgid "Para cancelar una reserva necesitas el enlace que te enviamos por correo."
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Personalización de correos"
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "Personalizado"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Personalizar campos por actividad"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Personalizar configuración avanzada para esta actividad"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "Personas en espera"
+msgstr ""
+
+#: admin/class-admin.php
+#: includes/class-reports.php
+msgid "Período"
+msgstr ""
+
+#: includes/class-privacy.php
+msgid "Phone"
+msgstr ""
+
+#: templates/admin/partials/campo-form.php
+msgid "Placeholder"
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Plantilla"
+msgstr ""
+
+#: admin/class-actividades.php
+#: templates/admin/dashboard.php
+#: templates/confirmacion.php
+msgid "Plazas"
+msgstr ""
+
+#: includes/class-booking.php
+msgid "Plazas disponibles:"
+msgstr ""
+
+#: includes/class-reports.php
+msgid "Plazas libres"
+msgstr ""
+
+#: includes/class-booking.php
+msgid "Por favor, completa los campos obligatorios."
+msgstr ""
+
+#: includes/class-booking.php
+msgid "Por favor, rellena todos los campos obligatorios."
+msgstr ""
+
+#: includes/class-booking.php
+msgid "Por favor, selecciona una actividad y rellena los campos obligatorios."
+msgstr ""
+
+#: templates/admin/settings-campos.php
+msgid "Primero crea actividades desde el menú Actividades, luego podrás configurar los campos del formulario de cada una."
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "Proveedor de correo"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Próximas reservas"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Próximo ciclo"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Puedes usar las etiquetas {nombre} y {calendario} en los textos."
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "Puerto"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Página de cancelación"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Página de confirmación"
+msgstr ""
+
+#: templates/calendar.php
+msgid "Quedan pocas plazas"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "Quitar"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Radio del borde"
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "Recibir reservas en"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Redondeado"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Rellena el nombre y la fecha del festivo."
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Rellena todos los campos del período de vacaciones."
+msgstr ""
+
+#: includes/class-booking.php
+msgid "Rellena tus datos. Si se libera una plaza, la reserva se confirmará automáticamente."
+msgstr ""
+
+#: includes/class-notifications.php
+msgid "Reserva cancelada"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "Reserva cancelada y cliente notificado por correo."
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Reserva genérica"
+msgstr ""
+
+#: includes/class-booking.php
+msgid "Reservar"
+msgstr ""
+
+#: admin/class-admin.php
+#: includes/class-reports.php
+msgid "Reservas"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "Reservas activas"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Reservas hoy"
+msgstr ""
+
+#: includes/class-reports.php
+msgid "Reservas:"
+msgstr ""
+
+#: includes/class-reports.php
+msgid "Resumen por actividad"
+msgstr ""
+
+#: includes/class-reports.php
+msgid "Resumen por día"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Rotación"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Rótulo COMPLETO"
+msgstr ""
+
+#: admin/class-actividades.php
+#: includes/class-notifications.php
+#: includes/class-reports.php
+msgid "Sala"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Sala / Ubicación"
+msgstr ""
+
+#: includes/class-booking.php
+msgid "Sala:"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Seleccionar imagen"
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Selector (dropdown)"
+msgstr ""
+
+#: admin/class-actividades.php
+#: admin/class-settings.php
+#: includes/class-booking.php
+msgid "Septiembre"
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "Servidor SMTP"
+msgstr ""
+
+#: templates/admin/settings-calendarios.php
+msgid "Shortcode"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Shortcodes disponibles"
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "Si está desactivado, WordPress usará su método de envío por defecto."
+msgstr ""
+
+#: includes/class-notifications.php
+msgid "Si fue un error puedes hacer una nueva reserva en nuestra web."
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Si no se personaliza, se usarán los valores del calendario."
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Sin activación automática — el siguiente ciclo empieza cuando el admin lo configure."
+msgstr ""
+
+#: admin/class-admin.php
+msgid "Sin actividad (%d)"
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "Sin cifrado"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Sin configurar"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "Sin datos."
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Sistema (sin carga externa)"
+msgstr ""
+
+#: templates/admin/partials/campo-form.php
+msgid "Solo letras, números y guión bajo."
+msgstr ""
+
+#: includes/class-booking.php
+msgid "Solo quedan %d plaza(s) disponibles en esta actividad."
+msgstr ""
+
+#: includes/class-privacy.php
+msgid "Status"
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Sábado"
+msgstr ""
+
+#: templates/cancelar.php
+msgid "Sí, cancelar mi reserva"
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "TLS (recomendado)"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Tamaño de celda"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Tamaño del icono"
+msgstr ""
+
+#: includes/class-booking.php
+msgid "Te hemos añadido a la lista de espera. Te avisaremos si se libera una plaza."
+msgstr ""
+
+#: templates/confirmacion.php
+msgid "Te hemos enviado un correo con los detalles de tu reserva."
+msgstr ""
+
+#: includes/class-booking.php
+msgid "Te hemos enviado un correo de confirmación con el enlace para cancelar si lo necesitas."
+msgstr ""
+
+#: admin/class-admin.php
+#: admin/class-settings.php
+#: includes/class-reports.php
+msgid "Teléfono"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Texto"
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Texto corto"
+msgstr ""
+
+#: templates/admin/partials/campo-form.php
+msgid "Texto de ayuda dentro del campo"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Texto del botón"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Texto en mayúsculas"
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Texto largo"
+msgstr ""
+
+#: includes/class-privacy.php
+msgid "Time slot"
+msgstr ""
+
+#: templates/admin/partials/campo-form.php
+#: templates/admin/settings-calendarios.php
+msgid "Tipo"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Tipo de fondo"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Tipografía"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "Todas (%d)"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "Todas las reservas de esa actividad han sido eliminadas correctamente."
+msgstr ""
+
+#: includes/class-notifications.php
+msgid "Todos los derechos reservados"
+msgstr ""
+
+#: admin/class-admin.php
+#: includes/class-reports.php
+msgid "Total asistentes"
+msgstr ""
+
+#: includes/class-reports.php
+msgid "Total menores:"
+msgstr ""
+
+#: includes/class-reports.php
+msgid "Total reservas"
+msgstr ""
+
+#: includes/class-booking.php
+msgid "Tu email:"
+msgstr ""
+
+#: includes/class-booking.php
+msgid "Tu nombre:"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "URL de la imagen"
+msgstr ""
+
+#: templates/admin/settings-calendarios.php
+msgid "URL del logo"
+msgstr ""
+
+#: templates/admin/partials/campo-form.php
+msgid "Una opción por línea"
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "Usa esa contraseña aquí"
+msgstr ""
+
+#: templates/admin/settings-campos.php
+msgid "Usar una plantilla predeterminada"
+msgstr ""
+
+#: includes/class-notifications.php
+msgid "Usuario"
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "Usuario / Email"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Vacaciones"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Vacaciones guardadas correctamente."
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "Ve a Seguridad > Contraseñas de aplicaciones"
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "Ve a tu cuenta de Google"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Ventana actual"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Ventana de reserva activa ahora mismo"
+msgstr ""
+
+#: templates/admin/dashboard.php
+msgid "Ver Reservas"
+msgstr ""
+
+#: admin/class-settings.php
+msgid "Viernes"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "Vista previa"
+msgstr ""
+
+#: templates/cancelar.php
+#: templates/confirmacion.php
+msgid "Volver al inicio"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "Volver al listado"
+msgstr ""
+
+#: includes/class-booking.php
+msgid "Ya estás en la lista de espera para esta actividad."
+msgstr ""
+
+#: includes/class-booking.php
+msgid "Ya tienes una reserva activa para esta actividad en esta fecha."
+msgstr ""
+
+#: admin/class-settings.php
+msgid "aplicada."
+msgstr ""
+
+#: includes/class-booking.php
+msgid "de"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "en espera"
+msgstr ""
+
+#: includes/class-booking.php
+msgid "menor(es) apuntado(s)"
+msgstr ""
+
+#: includes/class-reports.php
+msgid "menores"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "meses"
+msgstr ""
+
+#: templates/admin/settings-campos.php
+msgid "obligatorio"
+msgstr ""
+
+#: includes/class-booking.php
+msgid "¡%d plaza(s)!"
+msgstr ""
+
+#: includes/class-notifications.php
+msgid "¡Hemos reservado tu plaza!"
+msgstr ""
+
+#: includes/class-booking.php
+#: includes/class-notifications.php
+#: templates/calendar.php
+msgid "¡Reserva confirmada!"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "¿Eliminar a esta persona de la lista de espera?"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "¿Eliminar esta actividad?"
+msgstr ""
+
+#: templates/admin/settings-campos.php
+msgid "¿Eliminar este campo?"
+msgstr ""
+
+#: templates/cancelar.php
+msgid "¿Estás seguro de que quieres cancelar esta reserva? Esta acción no se puede deshacer."
+msgstr ""
+
+#: admin/class-admin.php
+msgid "¿Seguro que quieres ELIMINAR PERMANENTEMENTE todas las reservas de \"%s\"?\\n\\nEsto borrará también la lista de espera. Esta acción no se puede deshacer."
+msgstr ""
+
+#: admin/class-admin.php
+msgid "¿Seguro que quieres cancelar esta reserva? Se enviará un email al usuario automáticamente."
+msgstr ""
+
+#: templates/admin/settings-calendarios.php
+msgid "¿Seguro que quieres eliminar este calendario? Esta acción no se puede deshacer."
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "— Heredar del calendario —"
+msgstr ""
+
+#: includes/class-notifications.php
+msgid "ℹ️ Si finalmente no puedes asistir, por favor cancela tu reserva para que otra persona pueda ocupar la plaza."
+msgstr ""
+
+#: includes/class-notifications.php
+msgid "ℹ️ Si necesitas cancelar tu reserva pulsa el botón de abajo."
+msgstr ""
+
+#: templates/calendar.php
+msgid "← Cambiar actividad"
+msgstr ""
+
+#: includes/class-booking.php
+msgid "← Volver a actividades"
+msgstr ""
+
+#: templates/admin/settings-calendarios.php
+msgid "← Volver a la lista"
+msgstr ""
+
+#: includes/class-notifications.php
+msgid "✅ Reserva confirmada – {calendario}"
+msgstr ""
+
+#: templates/cancelar.php
+msgid "✅ Tu reserva ha sido cancelada correctamente. Te hemos enviado un correo de confirmación."
+msgstr ""
+
+#: admin/class-admin.php
+msgid "✓ Activada"
+msgstr ""
+
+#: includes/class-notifications.php
+msgid "❌ Reserva cancelada – {calendario}"
+msgstr ""
+
+#: includes/class-notifications.php
+msgid "🎉 ¡Plaza confirmada automáticamente! – "
+msgstr ""
+
+#: admin/class-admin.php
+msgid "🎨 Diseño"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "🎯 Actividades"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "💾 Guardar"
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "💾 Guardar configuración"
+msgstr ""
+
+#: admin/class-actividades.php
+msgid "💾 Guardar configuración avanzada"
+msgstr ""
+
+#: templates/admin/settings-diseno.php
+msgid "💾 Guardar diseño"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "📅 Calendario"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "📊 Informes"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "📋 Reservas"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "📝 Campos"
+msgstr ""
+
+#: templates/admin/settings-campos.php
+msgid "📝 Campos del formulario"
+msgstr ""
+
+#: admin/class-admin.php
+msgid "📧 Correo"
+msgstr ""
+
+#: includes/class-smtp.php
+msgid "📨 Enviar prueba"
+msgstr ""
+
+#: includes/class-notifications.php
+msgid "🔔 Nueva reserva – "
+msgstr ""
+
+#: admin/class-actividades.php
+#: templates/admin/settings-calendarios.php
+msgid "🕐 Horario especial"
+msgstr ""
+
+#: admin/class-actividades.php
+#: templates/admin/settings-calendarios.php
+msgid "🚫 Bloqueado"
+msgstr ""
+

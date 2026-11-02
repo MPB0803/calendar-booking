@@ -1,0 +1,13 @@
+{
+  "name": "calendiflow-booking",
+  "version": "2.0.1",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "devDependencies": {
+    "cssnano": "^7.0.0",
+    "postcss": "^8.5.0",
+    "terser": "^5.46.1"
+  }
+}

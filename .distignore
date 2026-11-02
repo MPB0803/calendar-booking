@@ -1,0 +1,35 @@
+# Directories
+/.git
+/.github
+/node_modules
+/vendor
+/tests
+
+# Build and development files
+.distignore
+.gitignore
+.gitattributes
+phpunit.xml
+phpunit.phar
+composer.json
+composer.lock
+package.json
+package-lock.json
+build.mjs
+
+# Documentation
+AUDIT-REPORT.md
+*.md
+
+# Logs and temporary files
+*.log
+*.tmp
+*.cache
+.DS_Store
+Thumbs.db
+
+# IDE and editor files
+.vscode
+.idea
+*.sublime-project
+*.sublime-workspace

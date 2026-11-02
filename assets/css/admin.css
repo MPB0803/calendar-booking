@@ -1,0 +1,202 @@
+/* ── CALENDAR BOOKING — ESTILOS DEL PANEL DE ADMINISTRACIÓN ── */
+
+/* Dashboard */
+.calebo-dashboard {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.calebo-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px 24px;
+    min-width: 140px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,.04);
+}
+
+.calebo-card h3 {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+    margin: 0 0 8px 0;
+}
+
+.calebo-number {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #F7941D;
+    line-height: 1;
+    margin: 0;
+}
+
+/* Tablas */
+.wp-list-table .column-acciones { width: 120px; }
+
+/* Formularios */
+.form-table th {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Notices */
+.calebo-notice {
+    padding: 12px 16px;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 13px;
+    margin-bottom: 16px;
+}
+.calebo-notice-success {
+    background: #e8f5e9;
+    border-left: 4px solid #4caf50;
+    color: #2e7d32;
+}
+.calebo-notice-error {
+    background: #ffebee;
+    border-left: 4px solid #ef5350;
+    color: #c62828;
+}
+
+/* Botones de acción en tablas */
+.calebo-action-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: opacity .2s;
+}
+.calebo-action-btn:hover { opacity: .8; }
+
+/* Secciones del panel de diseño */
+.calebo-section {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+.calebo-section h3 {
+    margin: 0 0 16px;
+    font-size: 14px;
+    border-left: 3px solid #F7941D;
+    padding-left: 10px;
+}
+
+/* Drag handle en lista de campos */
+.calebo-drag-handle {
+    color: #ccc;
+    font-size: 18px;
+    cursor: grab;
+    user-select: none;
+}
+.calebo-drag-handle:active { cursor: grabbing; }
+
+/* ── Reservas: Tabs por actividad ── */
+.calebo-reservas-tabs { margin-top: 10px; }
+.calebo-reservas-tabs .nav-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+}
+.calebo-tab-count {
+    display: inline-block;
+    background: #f0f0f1;
+    color: #50575e;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1;
+    padding: 3px 7px;
+    border-radius: 10px;
+    min-width: 18px;
+    text-align: center;
+}
+.nav-tab-active .calebo-tab-count {
+    background: #F7941D;
+    color: #fff;
+}
+/* ── Scroll horizontal tabla reservas ── */
+.calebo-table-scroll { overflow-x:auto; -webkit-overflow-scrolling:touch; margin-bottom:4px; }
+.calebo-reservas-table {
+    margin-top: 0;
+    border-top: none;
+    min-width: 800px;
+}
+.calebo-reservas-table th,
+.calebo-reservas-table td { white-space:nowrap; padding:8px 12px; }
+.calebo-reservas-table th { min-width:90px; }
+.calebo-reservas-table td { max-width:220px; overflow:hidden; text-overflow:ellipsis; }
+
+/* Responsive */
+@media (max-width: 782px) {
+    .calebo-dashboard { flex-direction: column; }
+    .calebo-card { min-width: unset; }
+    .calebo-reservas-tabs { display: flex; flex-wrap: wrap; gap: 4px; }
+    .calebo-reservas-tabs .nav-tab { font-size: 12px; padding: 6px 10px; }
+}
+/* ── Tab eliminar actividad ── */
+.calebo-tab-group {
+    position: relative;
+}
+.calebo-tab-delete {
+    position: absolute;
+    top: 50%;
+    right: 6px;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    line-height: 17px;
+    text-align: center;
+    border-radius: 50%;
+    background: transparent;
+    color: #999;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background .15s, color .15s;
+    z-index: 2;
+}
+.calebo-tab-delete:hover {
+    background: #ef5350;
+    color: #fff;
+}
+.nav-tab-active + .calebo-tab-delete,
+.calebo-tab-group:hover .calebo-tab-delete {
+    color: #c62828;
+}
+
+/* ── Waitlist section ── */
+.calebo-waitlist-section {
+    border-top: 2px solid #f0f0f0;
+    padding-top: 20px;
+}
+.calebo-waitlist-card {
+    transition: box-shadow .2s;
+}
+.calebo-waitlist-card:hover {
+    box-shadow: 0 2px 12px rgba(247,148,29,.15);
+    border-color: #ffcc80 !important;
+}
+.calebo-waitlist-badge--active {
+    animation: calebo-pulse 2s infinite;
+}
+@keyframes calebo-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: .7; }
+}
+
+/* ── Toggle switch (actividades) ── */
+.calebo-toggle-wrap input:focus + .calebo-toggle-slider {
+    box-shadow: 0 0 0 3px rgba(247,148,29,.3);
+}

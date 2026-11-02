@@ -1,0 +1,129 @@
+/* CalendiFlow – Confirmation page styles */
+@keyframes calebo-draw { to { stroke-dashoffset: 0; } }
+@keyframes calebo-conf-pop  { 0% { transform: scale(.6); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+
+.calebo-conf-wrap {
+    font-family: 'Montserrat', Arial, sans-serif;
+    max-width: 580px;
+    margin: 40px auto;
+    padding: 24px 16px;
+    color: #2D2D2D;
+}
+
+/* Check animado */
+.calebo-conf-check { text-align: center; margin-bottom: 20px; }
+.calebo-conf-check svg { width: 88px; height: 88px; display: inline-block; animation: calebo-conf-pop .4s ease both; }
+
+/* Título / subtítulo */
+.calebo-conf-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #2D2D2D;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 6px;
+}
+.calebo-conf-subtitle { text-align: center; color: #777; font-size: .92rem; margin: 0 0 28px; }
+
+/* Tarjeta resumen tipo ticket */
+.calebo-conf-ticket {
+    background: #fff;
+    border: 1px solid #ececec;
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 24px rgba(0,0,0,.07);
+}
+.calebo-conf-ticket-head {
+    background: #2D2D2D;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.calebo-conf-ticket-head span {
+    color: #F7941D;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.calebo-conf-ticket-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    padding: 20px;
+}
+.calebo-conf-ticket-item { text-align: center; }
+.calebo-conf-ticket-item:first-child { grid-column: 1 / -1; }
+.calebo-conf-ticket-key {
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #999;
+    margin-bottom: 4px;
+}
+.calebo-conf-ticket-val {
+    display: block;
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: #1E3FA3;
+}
+.calebo-conf-ticket-val--big { font-size: 1.2rem; color: #2D2D2D; }
+
+/* Tarjeta de detalle */
+.calebo-conf-card {
+    background: #fff;
+    border: 1px solid #efefef;
+    border-radius: 14px;
+    padding: 6px 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.06);
+}
+.calebo-conf-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 13px 0;
+    border-bottom: 1px solid #f5f5f5;
+    font-size: .92rem;
+    color: #444;
+    gap: 12px;
+}
+.calebo-conf-row:last-child { border-bottom: none; }
+.calebo-conf-label {
+    color: #8a8a8a;
+    font-size: .82rem;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.calebo-conf-value {
+    font-weight: 700;
+    color: #2D2D2D;
+    text-align: right;
+    word-break: break-word;
+}
+
+/* Botón */
+.calebo-conf-btn {
+    display: inline-block;
+    background: #F7941D;
+    color: #fff;
+    font-weight: 800;
+    font-size: .9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 14px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.calebo-conf-btn:hover { background: #e2880f; color: #fff; }
+
+@media (max-width: 420px) {
+    .calebo-conf-ticket-body { grid-template-columns: 1fr; }
+    .calebo-conf-ticket-item:first-child { grid-column: 1; }
+}

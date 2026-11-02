@@ -1,0 +1,59 @@
+# Directories
+.git
+.github
+node_modules
+vendor
+.sass-cache
+.cache
+
+# Build files
+build
+dist
+
+# Development and testing
+tests
+.phpunit.result.cache
+phpunit.xml
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode
+.idea
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# WordPress
+wp-config.php
+wp-content/uploads/
+wp-content/cache/
+*.sql
+*.sql.gz
+
+# Package managers
+composer.phar
+package-lock.json
+yarn.lock
+
+# Documentation (internal)
+AUDIT-REPORT.md
+WORDPRESS-ORG-READY.md
+RESUMEN-FINAL.md
+verify-wporg.sh

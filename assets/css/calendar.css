@@ -1,0 +1,880 @@
+/* ── CALENDAR BOOKING ── */
+.calebo-wrap {
+    font-family: 'Montserrat', Arial, sans-serif;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 16px;
+    box-sizing: border-box;
+    position: relative;
+}
+ 
+.calebo-wrap * { box-sizing: border-box; }
+ 
+/* ── CABECERA ── */
+.calebo-cal-header {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    background: var(--calebo-primary) !important;
+    border-radius: 8px 8px 0 0 !important;
+    padding: 16px 24px !important;
+    color: #fff !important;
+}
+.calebo-cal-header h2 {
+    font-size: 1.1rem !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    margin: 0 !important;
+    color: #fff !important;
+}
+ 
+/* ── FLECHAS ── */
+.calebo-nav-btn {
+    background: rgba(255,255,255,0.25) !important;
+    border: 2px solid rgba(255,255,255,0.6) !important;
+    color: #fff !important;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 8px !important;
+    font-size: 1.3rem !important;
+    font-weight: 900 !important;
+    cursor: pointer !important;
+    transition: background .2s, transform .1s !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    line-height: 1 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+.calebo-nav-btn:hover {
+    background: rgba(255,255,255,0.4) !important;
+    transform: scale(1.08) !important;
+}
+.calebo-nav-btn:active {
+    transform: scale(0.95) !important;
+}
+.calebo-nav-btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+ 
+/* ── GRID ── */
+.calebo-cal-grid {
+    display: grid !important;
+    grid-template-columns: repeat(7, 1fr) !important;
+    gap: 4px !important;
+    background: #fff !important;
+    border: 1px solid #f0f0f0 !important;
+    border-top: none !important;
+    padding: 8px !important;
+}
+.calebo-day-label {
+    text-align: center !important;
+    font-size: .7rem !important;
+    font-weight: 800 !important;
+    color: #fff !important;
+    background: #2D2D2D !important;
+    text-transform: uppercase !important;
+    letter-spacing: .5px !important;
+    padding: 8px 0 !important;
+}
+ 
+/* ── DÍAS BASE ── */
+.calebo-day {
+    border-radius: 6px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: .85rem !important;
+    font-weight: 700 !important;
+    cursor: pointer !important;
+    transition: transform .15s, box-shadow .15s !important;
+    border: 2px solid #e0e0e0 !important;
+    position: relative !important;
+    background: #fff !important;
+    aspect-ratio: unset !important;
+}
+.calebo-day:hover:not(.calebo-day--disabled):not(.calebo-day--no-disponible):not(.calebo-day--cerrado):not(.calebo-day--lleno) {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,.1) !important;
+}
+ 
+/* ── ESTADOS ── */
+.calebo-day--vacio {
+    background: transparent !important;
+    cursor: default !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.calebo-day--cargando {
+    background: #f5f5f5 !important;
+    animation: calebo-pulse 1.2s infinite !important;
+    border: 2px solid #eee !important;
+}
+.calebo-day--no-disponible {
+    background: #fafafa !important;
+    color: #ccc !important;
+    cursor: not-allowed !important;
+    opacity: .4 !important;
+    border: 2px solid #f0f0f0 !important;
+}
+.calebo-day--cerrado {
+    background: #fafafa !important;
+    color: #ddd !important;
+    cursor: not-allowed !important;
+    opacity: .3 !important;
+    border: 2px solid #f0f0f0 !important;
+}
+.calebo-day--disponible {
+    background: #fff !important;
+    color: #2D2D2D !important;
+    border-color: #e0e0e0 !important;
+}
+.calebo-day--disponible:hover {
+    background: #f9f9f9 !important;
+    border-color: #bbb !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08) !important;
+}
+.calebo-day--casi_lleno {
+    background: #fff !important;
+    color: #f57f17 !important;
+    border-color: #ffe082 !important;
+}
+.calebo-day--casi_lleno:hover {
+    background: #fff8e1 !important;
+    border-color: #ffca28 !important;
+}
+.calebo-day--lleno {
+    background: #fff !important;
+    color: #ccc !important;
+    border-color: #f0f0f0 !important;
+    cursor: not-allowed !important;
+    opacity: .7 !important;
+}
+ 
+/* ── DÍA DE HOY ── */
+.calebo-day--hoy {
+    background: #fff !important;
+    color: #2D2D2D !important;
+    border: 2px solid #2D2D2D !important;
+}
+.calebo-day-hoy-label {
+    font-size: .55rem !important;
+    font-weight: 800 !important;
+    color: var(--calebo-primary) !important;
+    text-transform: uppercase !important;
+    letter-spacing: .5px !important;
+    line-height: 1 !important;
+    margin-bottom: 2px !important;
+    display: block !important;
+}
+ 
+/* ── DÍA SELECCIONADO ── */
+.calebo-day--seleccionado {
+    background: var(--calebo-primary) !important;
+    color: #ffffff !important;
+    border-color: var(--calebo-primary) !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15) !important;
+    transform: none !important;
+}
+.calebo-day--seleccionado .calebo-day-hoy-label {
+    color: #fff !important;
+}
+ 
+/* ── RÓTULO COMPLETO ── */
+.calebo-day--lleno::after {
+    content: 'COMPLETO' !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    background: var(--calebo-secondary) !important;
+    color: #fff !important;
+    font-size: 7px !important;
+    font-weight: 800 !important;
+    padding: 2px 5px !important;
+    border-radius: 3px !important;
+    white-space: nowrap !important;
+    pointer-events: none !important;
+    z-index: 10 !important;
+}
+ 
+@keyframes calebo-pulse {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: .5; }
+}
+ 
+.calebo-day-num {
+    font-size: .95rem !important;
+    line-height: 1 !important;
+    font-weight: 700 !important;
+    display: block !important;
+}
+.calebo-day-sub {
+    font-size: .58rem !important;
+    font-weight: 600 !important;
+    margin-top: 2px !important;
+    opacity: .8 !important;
+    display: block !important;
+}
+ 
+/* ── LEYENDA ── */
+.calebo-leyenda {
+    display: flex !important;
+    gap: 16px !important;
+    flex-wrap: wrap !important;
+    padding: 12px 8px !important;
+    font-size: .75rem !important;
+    font-weight: 600 !important;
+    border: 1px solid #f0f0f0 !important;
+    border-top: none !important;
+    margin-bottom: 24px !important;
+    background: #fff !important;
+}
+.calebo-leyenda-item {
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+}
+.calebo-leyenda-dot {
+    width: 14px !important;
+    height: 14px !important;
+    border-radius: 3px !important;
+    border: 2px solid !important;
+    display: inline-block !important;
+}
+.calebo-dot-disponible { background: #fff !important; border-color: #e0e0e0 !important; }
+.calebo-dot-casi       { background: #fff !important; border-color: #ffe082 !important; }
+.calebo-dot-lleno      { background: #fff !important; border-color: #f0f0f0 !important; }
+ 
+/* ── FORMULARIO ── */
+.calebo-form-wrap {
+    background: #fff !important;
+    border-radius: 8px !important;
+    padding: 24px !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,.08) !important;
+    border: 1px solid #f0f0f0 !important;
+    animation: calebo-fadein .3s ease !important;
+}
+@keyframes calebo-fadein {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.calebo-form-wrap h3 {
+    font-size: 1.1rem !important;
+    font-weight: 800 !important;
+    margin: 0 0 8px 0 !important;
+}
+.calebo-fecha-label {
+    display: inline-block !important;
+    background: var(--calebo-primary) !important;
+    color: #fff !important;
+    border-radius: 6px !important;
+    padding: 4px 12px !important;
+    font-size: .8rem !important;
+    font-weight: 700 !important;
+    margin-bottom: 20px !important;
+}
+.calebo-form-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 12px !important;
+    margin-bottom: 12px !important;
+}
+.calebo-full { grid-column: 1 / -1 !important; }
+.calebo-field label {
+    display: block !important;
+    font-size: .72rem !important;
+    font-weight: 700 !important;
+    color: #666 !important;
+    margin-bottom: 4px !important;
+    text-transform: uppercase !important;
+    letter-spacing: .4px !important;
+}
+.calebo-field input,
+.calebo-field textarea,
+.calebo-field select {
+    width: 100% !important;
+    padding: 10px 12px !important;
+    border: 2px solid #e8e8e8 !important;
+    border-radius: 6px !important;
+    font-family: inherit !important;
+    font-size: .9rem !important;
+    font-weight: 600 !important;
+    outline: none !important;
+    transition: border-color .2s !important;
+    color: #2D2D2D !important;
+    background: #fff !important;
+}
+.calebo-field input:focus,
+.calebo-field textarea:focus,
+.calebo-field select:focus {
+    border-color: var(--calebo-primary) !important;
+}
+.calebo-field textarea {
+    resize: vertical !important;
+    min-height: 80px !important;
+}
+.calebo-plazas-info {
+    background: #fff8e1 !important;
+    border: 1px solid #ffe082 !important;
+    border-radius: 6px !important;
+    padding: 8px 12px !important;
+    font-size: .8rem !important;
+    font-weight: 700 !important;
+    color: #f57f17 !important;
+    margin-bottom: 14px !important;
+}
+ 
+/* ── BOTÓN RESERVAR ── */
+.calebo-btn-reservar {
+    width: 100% !important;
+    padding: 13px !important;
+    background: var(--calebo-primary) !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 6px !important;
+    font-family: inherit !important;
+    font-size: .95rem !important;
+    font-weight: 800 !important;
+    cursor: pointer !important;
+    text-transform: uppercase !important;
+    letter-spacing: .5px !important;
+    transition: opacity .2s, transform .1s !important;
+}
+.calebo-btn-reservar:hover    { opacity: .9 !important; transform: translateY(-1px) !important; }
+.calebo-btn-reservar:disabled { opacity: .6 !important; cursor: not-allowed !important; transform: none !important; }
+ 
+/* ── MENSAJES ── */
+.calebo-msg {
+    padding: 10px 14px !important;
+    border-radius: 6px !important;
+    font-size: .85rem !important;
+    font-weight: 700 !important;
+    margin-top: 12px !important;
+}
+.calebo-msg-error {
+    background: #ffebee !important;
+    color: #c62828 !important;
+    border: 1px solid #ef9a9a !important;
+}
+ 
+/* ── CONFIRMACIÓN ── */
+.calebo-confirmacion {
+    text-align: center !important;
+    padding: 32px 20px !important;
+    animation: calebo-fadein .4s ease !important;
+}
+.calebo-check-circle {
+    width: 72px !important;
+    height: 72px !important;
+    background: var(--calebo-primary) !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 auto 16px !important;
+    font-size: 2rem !important;
+    color: #fff !important;
+    font-weight: 800 !important;
+    animation: calebo-pop .4s ease !important;
+}
+@keyframes calebo-pop {
+    0%   { transform: scale(0); }
+    70%  { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+.calebo-confirmacion h3 {
+    font-size: 1.3rem !important;
+    font-weight: 800 !important;
+    color: #2e7d32 !important;
+    margin-bottom: 8px !important;
+}
+.calebo-confirmacion p {
+    color: #555 !important;
+    font-size: .9rem !important;
+    line-height: 1.6 !important;
+}
+.calebo-btn-nueva {
+    margin-top: 16px !important;
+    padding: 10px 24px !important;
+    background: var(--calebo-primary) !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 6px !important;
+    font-family: inherit !important;
+    font-size: .9rem !important;
+    font-weight: 800 !important;
+    cursor: pointer !important;
+    transition: opacity .2s !important;
+}
+.calebo-btn-nueva:hover { opacity: .85 !important; }
+ 
+/* ── SKELETON LOADING ── */
+.calebo-day--skeleton {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e8e8e8 50%, #f0f0f0 75%) !important;
+    background-size: 200% 100% !important;
+    animation: calebo-skeleton-shimmer 1.5s infinite !important;
+    border: 2px solid #f0f0f0 !important;
+    cursor: default !important;
+}
+.calebo-day--skeleton .calebo-day-num {
+    visibility: hidden !important;
+}
+@keyframes calebo-skeleton-shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 600px) {
+    .calebo-wrap {
+        padding: 8px !important;
+        max-width: 100% !important;
+    }
+    .calebo-cal-header {
+        padding: 12px 16px !important;
+    }
+    .calebo-cal-header h2 {
+        font-size: .85rem !important;
+        letter-spacing: 1px !important;
+    }
+    .calebo-nav-btn {
+        width: 34px !important;
+        height: 34px !important;
+        font-size: 1.1rem !important;
+    }
+    .calebo-cal-grid {
+        gap: 3px !important;
+        padding: 6px !important;
+    }
+    .calebo-day {
+        min-height: 48px !important;
+        font-size: .75rem !important;
+        border-radius: 4px !important;
+        border-width: 1.5px !important;
+    }
+    .calebo-day-num {
+        font-size: .82rem !important;
+    }
+    .calebo-day-sub {
+        font-size: .5rem !important;
+        display: block !important;
+    }
+    .calebo-day-label {
+        font-size: .6rem !important;
+        padding: 6px 0 !important;
+    }
+    .calebo-day-multi-dot {
+        width: 14px !important;
+        height: 14px !important;
+        font-size: .5rem !important;
+        top: 2px !important;
+        right: 2px !important;
+    }
+    .calebo-day--lleno::after {
+        font-size: 5.5px !important;
+        padding: 1px 3px !important;
+    }
+    .calebo-form-grid {
+        grid-template-columns: 1fr !important;
+    }
+    .calebo-form-wrap {
+        padding: 16px !important;
+    }
+    .calebo-leyenda {
+        gap: 10px !important;
+        padding: 10px 6px !important;
+        font-size: .68rem !important;
+    }
+    .calebo-act-card {
+        padding: 12px !important;
+    }
+    .calebo-act-header {
+        flex-direction: column !important;
+        gap: 8px !important;
+    }
+}
+@media (max-width: 360px) {
+    .calebo-day {
+        min-height: 40px !important;
+    }
+    .calebo-day-sub {
+        display: none !important;
+    }
+    .calebo-cal-header h2 {
+        font-size: .75rem !important;
+    }
+}
+/* ── RÓTULO VACACIONES ── */
+.calebo-day--vacaciones {
+    position: relative !important;
+}
+.calebo-day--vacaciones .calebo-day-num::after {
+    content: 'VAC' !important;
+    display: block !important;
+    background: var(--calebo-primary) !important;
+    color: #fff !important;
+    font-size: 16px !important;
+    font-weight: 800 !important;
+    padding: 1px 3px !important;
+    border-radius: 3px !important;
+    margin-top: 2px !important;
+    text-align: center !important;
+}
+ 
+/* ── OVERLAY DE CARGA ── */
+.calebo-loading-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.88);
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.calebo-loader-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 10px;
+    border: 3px solid var(--calebo-primary);
+    background: #fff;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.calebo-loader-header {
+    background: var(--calebo-primary);
+    height: 13px;
+    width: 100%;
+}
+.calebo-loader-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3px;
+    padding: 4px;
+}
+.calebo-loader-cell {
+    width: 7px;
+    height: 7px;
+    border-radius: 2px;
+    background: #e8e8e8;
+    transition: none;
+}
+.calebo-loader-cell--on {
+    background: var(--calebo-primary);
+    animation: calebo-cell-pop 0.25s ease forwards;
+}
+.calebo-loader-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: inherit;
+}
+@keyframes calebo-cell-pop {
+    0%   { transform: scale(0); opacity: 0; }
+    60%  { transform: scale(1.3); }
+    100% { transform: scale(1); opacity: 1; }
+}
+ 
+/* ── ACTIVIDADES ── */
+.calebo-actividades-wrap {
+    margin-top: 20px;
+}
+.calebo-actividades-wrap h3 {
+    font-size: 1rem !important;
+    font-weight: 700 !important;
+    margin: 0 0 14px !important;
+    color: #2D2D2D;
+}
+.calebo-act-card {
+    background: #fff;
+    border: 1.5px solid #e8e8e8;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 10px;
+    transition: border-color .2s, box-shadow .2s;
+}
+.calebo-act-card:hover {
+    border-color: var(--calebo-primary);
+    box-shadow: 0 2px 12px rgba(0,0,0,.06);
+}
+.calebo-act-card--lleno {
+    opacity: .75;
+}
+.calebo-act-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+}
+.calebo-act-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.calebo-act-nombre {
+    font-size: .95rem;
+    font-weight: 700;
+    color: #2D2D2D;
+}
+.calebo-act-horario {
+    font-size: .82rem;
+    font-weight: 600;
+    color: var(--calebo-primary);
+}
+.calebo-act-sala {
+    font-size: .78rem;
+    color: #888;
+}
+.calebo-act-desc {
+    font-size: .82rem;
+    color: #666;
+    margin: 8px 0 0;
+    line-height: 1.5;
+}
+.calebo-act-estado {
+    flex-shrink: 0;
+}
+.calebo-act-badge {
+    display: inline-block;
+    font-size: .72rem;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+.calebo-act-badge--libre {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+.calebo-act-badge--lleno {
+    background: #ffebee;
+    color: #c62828;
+}
+.calebo-act-footer {
+    margin-top: 12px;
+}
+.calebo-act-btn {
+    font-family: inherit !important;
+    font-size: .85rem !important;
+    font-weight: 700 !important;
+    padding: 8px 20px !important;
+    border-radius: 6px !important;
+    border: none !important;
+    cursor: pointer !important;
+    transition: opacity .2s !important;
+}
+.calebo-act-btn--reservar {
+    background: var(--calebo-primary) !important;
+    color: #fff !important;
+}
+.calebo-act-btn--reservar:hover {
+    opacity: .85 !important;
+}
+.calebo-act-btn--disabled {
+    background: #f0f0f0 !important;
+    color: #aaa !important;
+    cursor: not-allowed !important;
+}
+
+/* Fila de actividad seleccionada en el formulario */
+.calebo-actividad-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: .85rem;
+    margin: 6px 0 12px;
+    flex-wrap: wrap;
+}
+.calebo-actividad-label-prefix {
+    color: #888;
+    font-weight: 600;
+}
+.calebo-actividad-label {
+    font-weight: 700;
+    color: var(--calebo-primary);
+}
+.calebo-btn-volver-actividades {
+    font-family: inherit !important;
+    font-size: .78rem !important;
+    background: none !important;
+    border: 1px solid #e0e0e0 !important;
+    border-radius: 4px !important;
+    padding: 3px 10px !important;
+    color: #666 !important;
+    cursor: pointer !important;
+    margin-left: auto !important;
+}
+.calebo-btn-volver-actividades:hover {
+    border-color: var(--calebo-primary) !important;
+    color: var(--calebo-primary) !important;
+}
+
+/* ── INDICADOR DÍA MULTI-EVENTO ── */
+.calebo-day--multi-evento {
+    position: relative !important;
+}
+.calebo-day-multi-dot {
+    position: absolute !important;
+    top: 4px !important;
+    right: 4px !important;
+    background: var(--calebo-secondary) !important;
+    color: #fff !important;
+    font-size: .55rem !important;
+    font-weight: 800 !important;
+    line-height: 1 !important;
+    width: 16px !important;
+    height: 16px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    pointer-events: none !important;
+    box-shadow: 0 1px 4px rgba(0,0,0,.2) !important;
+    z-index: 5 !important;
+}
+/* Leyenda multi-evento */
+.calebo-dot-multi {
+    background: var(--calebo-secondary, #1E3FA3) !important;
+    border-color: var(--calebo-secondary, #1E3FA3) !important;
+}
+
+/* ── CAMPOS EXTRA DEL EVENTO ── */
+.calebo-campos-extra-section {
+    margin-top: 16px !important;
+    border-top: 2px dashed var(--calebo-primary) !important;
+    padding-top: 14px !important;
+    animation: calebo-fadein .25s ease !important;
+}
+.calebo-campos-extra-title {
+    font-size: .75rem !important;
+    font-weight: 800 !important;
+    text-transform: uppercase !important;
+    letter-spacing: .5px !important;
+    color: var(--calebo-primary) !important;
+    margin-bottom: 12px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+}
+.calebo-campos-extra-title::before {
+    content: '★' !important;
+    font-size: .8rem !important;
+}
+
+/* ── Spinner de carga de actividades ── */
+.calebo-loading-actividades {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 0;
+    color: #888;
+    font-size: 14px;
+}
+.calebo-spinner-actividades {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #e0e0e0;
+    border-top-color: var(--calebo-primary, #F7941D);
+    border-radius: 50%;
+    animation: calebo-spin 0.7s linear infinite;
+    flex-shrink: 0;
+}
+@keyframes calebo-spin {
+    to { transform: rotate(360deg); }
+}
+
+/* ── CONFIRMACIÓN MEJORADA ── */
+.calebo-confirmacion-detalle {
+    background: #f9f9f9 !important;
+    border: 1px solid #f0f0f0 !important;
+    border-radius: 8px !important;
+    padding: 16px !important;
+    margin: 16px 0 !important;
+    text-align: left !important;
+    font-size: .9rem !important;
+    line-height: 1.8 !important;
+}
+.calebo-check-svg {
+    width: 72px !important;
+    height: 72px !important;
+    margin: 0 auto 16px !important;
+    display: block !important;
+}
+.calebo-check-svg circle {
+    fill: var(--calebo-primary) !important;
+}
+.calebo-check-svg path {
+    stroke: #fff !important;
+    stroke-width: 3 !important;
+    stroke-linecap: round !important;
+    stroke-linejoin: round !important;
+    stroke-dasharray: 30 !important;
+    stroke-dashoffset: 30 !important;
+    animation: calebo-check-draw 0.5s 0.3s ease forwards !important;
+}
+@keyframes calebo-check-draw {
+    to { stroke-dashoffset: 0; }
+}
+.calebo-confetti {
+    position: absolute !important;
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 2px !important;
+    animation: calebo-confetti-fall 1.5s ease forwards !important;
+    pointer-events: none !important;
+    z-index: 200 !important;
+}
+@keyframes calebo-confetti-fall {
+    0%   { opacity: 1; transform: translateY(0) rotate(0deg) scale(1); }
+    100% { opacity: 0; transform: translateY(120px) rotate(720deg) scale(0.3); }
+}
+
+/* ── LISTA DE ESPERA ── */
+.calebo-act-btn--espera {
+    background: #fff8e1 !important;
+    color: #f57f17 !important;
+    border: 1.5px solid #ffe082 !important;
+    font-family: inherit !important;
+    font-size: .82rem !important;
+    font-weight: 700 !important;
+    padding: 8px 18px !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+    transition: all .2s !important;
+}
+.calebo-act-btn--espera:hover {
+    background: #fff3cd !important;
+    border-color: #ffca28 !important;
+}
+
+/* ── ACCESIBILIDAD ── */
+.calebo-day:focus-visible {
+    outline: 3px solid var(--calebo-primary) !important;
+    outline-offset: 2px !important;
+    z-index: 10 !important;
+}
+.calebo-act-btn:focus-visible,
+.calebo-btn-reservar:focus-visible,
+.calebo-nav-btn:focus-visible {
+    outline: 3px solid var(--calebo-primary) !important;
+    outline-offset: 2px !important;
+}
+.calebo-field input:focus-visible,
+.calebo-field textarea:focus-visible,
+.calebo-field select:focus-visible {
+    outline: 2px solid var(--calebo-primary) !important;
+    outline-offset: 1px !important;
+}

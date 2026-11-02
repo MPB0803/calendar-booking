@@ -1,0 +1,155 @@
+/* CalendiFlow – Reportes: hoja de estilos de la página standalone del informe/PDF.
+   Los colores dinámicos (--primary/--secondary/--barra) se inyectan inline en <body> desde PHP. */
+:root {
+    --primary:   #F7941D;
+    --secondary: #1E3FA3;
+    --barra:     #1a1d20;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* ── Barra de acciones fija ── */
+.calebo-action-bar {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1a1d20;
+    padding: 0 28px;
+    height: 56px;
+    box-shadow: 0 2px 12px rgba(0,0,0,.35);
+    gap: 12px;
+}
+.calebo-action-bar .calebo-bar-title {
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1;
+    min-width: 0;
+}
+.calebo-action-bar .calebo-bar-title span {
+    font-weight: 400;
+    color: #8a8d90;
+    margin-left: 8px;
+}
+.calebo-bar-actions {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+}
+.calebo-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 0 18px;
+    height: 36px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: opacity .15s, transform .1s;
+}
+.calebo-btn:active { transform: scale(.97); }
+.calebo-btn-print {
+    background: var(--primary);
+    color: #fff;
+}
+.calebo-btn-print:hover { opacity: .88; }
+.calebo-btn-pdf {
+    background: #fff;
+    color: #1a1d20;
+}
+.calebo-btn-pdf:hover { opacity: .88; }
+.calebo-btn-back {
+    background: transparent;
+    color: #8a8d90;
+    border: 1px solid #3a3d40;
+}
+.calebo-btn-back:hover { color: #fff; border-color: #6a6d70; }
+
+/* ── Contenido del informe ── */
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
+    color: #2D2D2D;
+    padding: 80px 32px 40px; /* top para no quedar bajo la barra */
+}
+.calebo-report-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(0,0,0,.08);
+}
+.header {
+    background: var(--primary);
+    color: #fff;
+    padding: 28px 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h1 { font-size: 1.15rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; }
+.header img { vertical-align: middle; }
+.fecha-badge {
+    background: rgba(255,255,255,0.22);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.88rem;
+    white-space: nowrap;
+}
+.stripe { height: 5px; background: var(--secondary); }
+.resumen { background: #fff; padding: 24px 36px; display: flex; gap: 20px; border-bottom: 1px solid #f0f0f0; }
+.tarjeta { flex: 1; text-align: center; padding: 18px 12px; border-radius: 8px; border: 1.5px solid #f0f0f0; }
+.tarjeta .numero { font-size: 2.2rem; font-weight: 800; color: var(--primary); line-height: 1; }
+.tarjeta.sec .numero { color: var(--secondary); }
+.tarjeta .etiqueta { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; color: #999; margin-top: 5px; }
+.ocupacion-wrap { background: #fafafa; padding: 18px 36px 22px; border-bottom: 1px solid #f0f0f0; }
+.ocupacion-label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; color: #999; margin-bottom: 10px; }
+.barra-fondo { background: #e8e8e8; border-radius: 20px; height: 13px; overflow: hidden; }
+.barra-relleno { height: 100%; border-radius: 20px; background: var(--barra); transition: width .6s ease; }
+.barra-texto { font-size: 0.78rem; font-weight: 700; margin-top: 7px; text-align: right; color: #555; }
+.tabla-wrap { background: #fff; padding: 28px 36px 32px; }
+.tabla-titulo {
+    font-size: 0.7rem; font-weight: 800; text-transform: uppercase; color: #999;
+    margin-bottom: 16px; border-left: 3px solid var(--primary); padding-left: 10px;
+}
+table { width: 100%; border-collapse: collapse; font-size: 0.82rem; margin-bottom: 28px; }
+thead tr { background: #2D2D2D; color: #fff; }
+thead th { padding: 11px 13px; text-align: left; font-weight: 700; text-transform: uppercase; font-size: 0.68rem; }
+tbody tr:hover td { background: #fffbf5; }
+tbody tr:nth-child(even) td { background: #fafafa; }
+tbody td { padding: 10px 13px; border-bottom: 1px solid #f0f0f0; vertical-align: middle; }
+.badge { display: inline-block; background: var(--primary); color: #fff; font-weight: 800; font-size: 0.78rem; padding: 3px 10px; border-radius: 20px; }
+.badge.alto { background: var(--secondary); }
+.calebo-footer {
+    padding: 16px 36px;
+    border-top: 1px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.72rem;
+    color: #bbb;
+    background: #fafafa;
+}
+
+/* ── Print styles ── */
+@media print {
+    .calebo-action-bar { display: none !important; }
+    body { background: #fff !important; padding: 0 !important; }
+    .calebo-report-wrap { box-shadow: none !important; border-radius: 0 !important; }
+    tbody tr:hover td { background: transparent !important; }
+    * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+}
