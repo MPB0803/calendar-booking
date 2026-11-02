@@ -1,6 +1,6 @@
 # CalendiFlow – Booking & Event Calendar
 
-[![WordPress Plugin Version](https://img.shields.io/badge/version-2.0.1-blue.svg)](https://github.com/misaelpalomino/calendar-booking)
+[![WordPress Plugin Version](https://img.shields.io/badge/version-2.0.1-blue.svg)](https://github.com/MPB0803/calendar-booking)
 [![WordPress](https://img.shields.io/badge/WordPress-5.8%2B-blue.svg)](https://wordpress.org/)
 [![PHP](https://img.shields.io/badge/PHP-7.4%2B-purple.svg)](https://php.net/)
 [![License](https://img.shields.io/badge/license-GPL--2.0%2B-green.svg)](LICENSE.txt)
@@ -31,14 +31,14 @@ Booking system with capacity limit per number of attendees. Perfect for playroom
 
 ### Manual Installation
 
-1. Download the latest release from [GitHub Releases](https://github.com/misaelpalomino/calendar-booking/releases)
+1. Download the latest release from [GitHub Releases](https://github.com/MPB0803/calendar-booking/releases)
 2. Upload the `calendar-booking` folder to `/wp-content/plugins/`
 3. Activate the plugin from the WordPress Plugins menu
 
 ### From Source
 
 ```bash
-git clone https://github.com/misaelpalomino/calendar-booking.git
+git clone https://github.com/MPB0803/calendar-booking.git
 cd calendar-booking
 # No build process required - ready to activate
 ```
@@ -122,8 +122,8 @@ See [LICENSE.txt](LICENSE.txt) for full license text.
 ## 📞 Support
 
 - **WordPress.org Forums:** [Plugin Support](https://wordpress.org/support/plugin/calendar-booking)
-- **GitHub Issues:** [Report bugs or request features](https://github.com/misaelpalomino/calendar-booking/issues)
-- **Documentation:** [Wiki](https://github.com/misaelpalomino/calendar-booking/wiki) *(coming soon)*
+- **GitHub Issues:** [Report bugs or request features](https://github.com/MPB0803/calendar-booking/issues)
+- **Documentation:** [Wiki](https://github.com/MPB0803/calendar-booking/wiki) *(coming soon)*
 
 ## 📊 Changelog
 
@@ -147,7 +147,7 @@ See full [CHANGELOG.md](CHANGELOG.md) for version history.
 
 ## 🙏 Credits
 
-Developed and maintained by [Misael Francisco Palomino Beltrán](https://github.com/misaelpalomino)
+Developed and maintained by [Misael Francisco Palomino Beltrán](https://github.com/MPB0803)
 
 ---
 

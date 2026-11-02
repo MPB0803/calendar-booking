@@ -1,14 +1,14 @@
 <?php
 /**
  * Plugin Name: CalendiFlow – Booking & Event Calendar
- * Plugin URI:  https://github.com/misaelpalomino/calendar-booking
+ * Plugin URI:  https://github.com/MPB0803/calendar-booking
  * Description: Booking system with capacity limit per number of attendees. Ideal for playrooms, workshops, medical appointments and any service that needs to control attendance.
  * Version:     2.0.1
  * Requires at least: 5.8
  * Requires PHP: 7.4
  * Tested up to: 7.1
  * Author:      Misael Francisco Palomino Beltrán
- * Author URI:  https://github.com/misaelpalomino
+ * Author URI:  https://github.com/MPB0803
  * License:     GPLv2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: calendar-booking

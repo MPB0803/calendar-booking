@@ -90,9 +90,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **1.1.x** — Stability and compatibility updates
 - **1.0.x** — Initial public release
 
-[2.0.1]: https://github.com/misaelpalomino/calendar-booking/releases/tag/v2.0.1
-[1.3.9]: https://github.com/misaelpalomino/calendar-booking/releases/tag/v1.3.9
-[1.1.5]: https://github.com/misaelpalomino/calendar-booking/releases/tag/v1.1.5
-[1.1.1]: https://github.com/misaelpalomino/calendar-booking/releases/tag/v1.1.1
-[1.1.0]: https://github.com/misaelpalomino/calendar-booking/releases/tag/v1.1.0
-[1.0.0]: https://github.com/misaelpalomino/calendar-booking/releases/tag/v1.0.0
+[2.0.1]: https://github.com/MPB0803/calendar-booking/releases/tag/v2.0.1
+[1.3.9]: https://github.com/MPB0803/calendar-booking/releases/tag/v1.3.9
+[1.1.5]: https://github.com/MPB0803/calendar-booking/releases/tag/v1.1.5
+[1.1.1]: https://github.com/MPB0803/calendar-booking/releases/tag/v1.1.1
+[1.1.0]: https://github.com/MPB0803/calendar-booking/releases/tag/v1.1.0
+[1.0.0]: https://github.com/MPB0803/calendar-booking/releases/tag/v1.0.0
